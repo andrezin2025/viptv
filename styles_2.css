@@ -1,0 +1,307 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Corpo da página */
+html {
+    scroll-behavior: smooth; /* Rolagem suave */
+}
+
+/*body funcionando*/
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding-top: 80px;
+}
+
+/* Banner de vídeo ajustado */
+.video-banner {
+    position: relative;
+    width: 100%;
+    height: 90vh; /* Altura dinâmica */
+    overflow: hidden;
+    margin-top: 10px; /* Espaço para o header */
+    z-index: 1; /* Abaixo do header */
+}
+
+.video-banner video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Corrige a posição do centro */
+    z-index: 0; /* Mantém o vídeo abaixo do conteúdo */
+}
+
+/* Banner de vídeo ajustado 
+.video-banner {
+    position: relative;
+    width: 100%;
+    height: calc(60vh - 80px);
+    overflow: hidden;
+    margin-top: 10px;
+    padding-top: 50px;
+    z-index: 1; /* Abaixo do header 
+}
+
+.video-banner video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0; /* Certifica-se de que o vídeo esteja abaixo de tudo 
+}*/
+
+/* Carrossel de filmes */
+.carousel-container {
+    margin: 20px 0;
+}
+
+/*carrossel funcionando*/
+.carousel {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    overflow-x: auto;
+    padding: 10px;
+    scrollbar-width: thin;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.carousel::-webkit-scrollbar {
+    height: 6px;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+    background-color: red;
+    border-radius: 10px;
+}
+
+.carousel img {
+    width: 150px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.carousel img:hover {
+    transform: scale(1.1);
+}
+
+/* Opções de assinatura funcionando*/
+.subscription-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Estilo de cada plano */
+.plan {
+    background: linear-gradient(to bottom, rgb(252, 76, 76), black);
+    border: 2px solid red;
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+/* Título e preço */
+.plan h3 {
+    color: white;
+    font-size: 24px;
+    margin: 0;
+}
+
+.plan .price {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Linha separadora */
+hr {
+    border: none;
+    border-top: 1px solid white;
+    margin: 15px 0;
+}
+
+/* Lista de benefícios */
+.plan ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.plan ul li {
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+/* Botão */
+.plan .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ff4d4d;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.plan .btn:hover {
+    background-color: #cc0000;
+}
+
+/* Texto do reembolso */
+.plan .refund {
+    margin-top: 10px;
+    font-style: italic;
+    font-size: 14px;
+    color: gray;
+}
+
+/* Header fixo funcionando*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo semitransparente para melhor sobreposição */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1001; /* Certifique-se que é maior que o z-index do vídeo */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px); /* Opcional: Efeito de desfoque */
+}
+
+/* Logo */
+
+.logo {
+    justify-content: center;
+}
+
+.logo img {
+    max-height: 150px;
+}
+
+/* Footer */
+.footer {
+    background-color: #111;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 20px;
+    min-width: 250px;
+}
+
+.footer-logo {
+    width: 150px;
+    margin-bottom: 15px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section a:hover {
+    color: red;
+}
+
+.footer-text {
+    margin-top: 10px;
+    font-style: italic;
+    color: gray;
+    font-size: 14px;
+}
+
+/* Links externos com ícone */
+.footer-section a[target="_blank"]::after {
+    content: " ↗";
+}
+
+/* Seção de pagamentos */
+.payments {
+    width: 100%;
+    max-width: 250px;
+    margin-top: 10px;
+}
+
+/* Rodapé inferior */
+.footer-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #333;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: gray;
+}
+
+/* Botão do WhatsApp */
+.whatsapp-button {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.whatsapp-button img {
+    width: 20px;
+    margin-left: 10px;
+}
+
+.whatsapp-button:hover {
+    background-color: darkgreen;
+}

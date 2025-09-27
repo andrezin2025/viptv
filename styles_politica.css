@@ -1,0 +1,212 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Corpo da página */
+html {
+    scroll-behavior: smooth; /* Rolagem suave */
+}
+
+/*body funcionando*/
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding-top: 100px; /*5px*/
+    justify-content: center;
+    align-items: center;
+}
+
+.whatsapp a{
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.whatsapp a:hover {
+    color: red;
+}
+
+/* Centralizar a section na página */
+.politica {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
+    margin-top: 100px;
+    min-height: 100vh;       /* Garante que ocupe a altura total da janela */
+}
+
+/* Centralizar o conteúdo da section */
+.plan {
+    border: 2px solid red;
+    border-radius: 15px;
+    padding: 20px;
+    width: 90%;              /* Responsivo */
+    max-width: 900px;         /* Limite de largura */
+    color: white;
+    text-align: justify;      /* Texto justificado */
+    box-sizing: border-box;
+    margin: 0 auto;           /* Centraliza horizontalmente a section */
+}
+
+/* Título */
+.plan h2 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 5px;
+    text-align: center;         /* Texto alinhado à esquerda */
+}
+
+/* Título */
+.plan h3 {
+    color: red;
+    font-size: 24px;
+    margin-bottom: 5px;
+    text-align: left;         /* Texto alinhado à esquerda */
+}
+/*
+.plan {
+    /*background: linear-gradient(to bottom, rgb(252, 76, 76), black);
+    border: 2px solid red;
+    border-radius: 15px;
+    padding: 20px;
+    width: 90%; 
+    max-width: 900px; 
+    color: white;
+    text-align: justify; 
+    box-sizing: border-box;
+    position: relative;
+}
+*/
+
+/* Header fixo funcionando*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo semitransparente para melhor sobreposição */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1001; /* Certifique-se que é maior que o z-index do vídeo */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px); /* Opcional: Efeito de desfoque */
+}
+
+/* Logo */
+
+.logo {
+    justify-content: center;
+}
+
+.logo img {
+    max-height: 150px;
+}
+
+/* Footer */
+.footer {
+    background-color: #111;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 20px;
+    min-width: 250px;
+}
+
+.footer-logo {
+    width: 150px;
+    margin-bottom: 15px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section a:hover {
+    color: red;
+}
+
+.footer-text {
+    margin-top: 10px;
+    font-style: italic;
+    color: gray;
+    font-size: 14px;
+}
+
+/* Links externos com ícone */
+.footer-section a[target="_blank"]::after {
+    content: " ↗";
+}
+
+/* Seção de pagamentos */
+.payments {
+    width: 100%;
+    max-width: 250px;
+    margin-top: 10px;
+}
+
+/* Rodapé inferior */
+.footer-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #333;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: gray;
+}
+
+/* Botão do WhatsApp */
+.whatsapp-button {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.whatsapp-button img {
+    width: 20px;
+    margin-left: 10px;
+}
+
+.whatsapp-button:hover {
+    background-color: darkgreen;
+}

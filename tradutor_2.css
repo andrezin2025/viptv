@@ -1,0 +1,39 @@
+/* Oculta o elemento principal do tradutor */
+#google_translate_element {
+    display: none !important;
+  }
+  
+  /* Oculta a barra superior do Google Tradutor (fora da tela) */
+  .goog-te-banner-frame {
+    position: absolute;
+    top: -100px !important; /* Empurra para fora da tela */
+    left: 0;
+    width: 100%;
+    height: 40px;
+    display: none !important;
+  }
+  
+  /* Opcional: Ocultar o iframe extra que o Google cria */
+  iframe {
+    display: none !important;
+  }
+  
+  /* Estilo para as bandeiras */
+  .flags {
+    display: flex;
+    gap: 10px;
+    justify-content: left;
+    /*margin-top: 20px;*/;
+  }
+
+  .flag{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: transform 0.3s;
+  }
+
+  .flag:hover {
+    transform: scale(1.2);
+  }

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Entretenimento Online TV Prime</title>
+  <link rel="stylesheet" href="styles_2.css" />
+  <link rel="stylesheet" href="tradutor_2.css" />
+  <link rel="stylesheet" href="som.css">
+  <link rel="stylesheet" href="menu.css">
+  <script src="menu.js"></script>
+  <script src="script_video.js"></script>
+  <script src="som.js"></script>
+  <script src="tradutor_google.js"></script>
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <link rel="icon" href="/assets/icon.webp" type="image/x-icon"> <!-- Ícone do site -->
+</head>
+<body>
+  <header>
+    
+    <!--Teste Tradução-->
+    <div id="google_translate_element"></div>
+
+    <div class="flags">
+        <a href="javascript:trocarIdioma('es')">
+            <img alt="Espanhol" src="assets/esp.png" width="50" class="flag">
+        </a>
+        <a href="javascript:trocarIdioma('en')">
+            <img alt="Inglês" src="assets/eng.png" width="50" class="flag">
+        </a>
+        <a href="javascript:trocarIdioma('pt')">
+            <img alt="Português" src="assets/pt.png" width="50" class="flag">
+        </a>
+        <a href="javascript:trocarIdioma('it')">
+          <img alt="Italiano" src="assets/ita.png" width="50" class="flag">
+      </a>
+      <a href="javascript:trocarIdioma('fr')">
+        <img alt="Francês" src="assets/fr.png" width="50" class="flag">
+    </a>
+    <a href="javascript:trocarIdioma('de')">
+      <img alt="Alemão" src="assets/ale.png" width="50" class="flag">
+  </a>
+    </div>
+
+    <!--Fim teste tradução-->
+
+    <div class="logo">
+      <img src="/assets/logo2.png" alt="Logo da TV Prime" />
+    </div>
+    
+    <!--Teste menu responsivo-->
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav class="menu" id="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="https://wa.me/351936693919">Contato</a></li>
+        </ul>
+    </nav>
+    <!--Fim teste menu resposnivo-->
+
+  </header>
+
+  <section class="video-banner">
+    <video id="videoPlayer" autoplay muted loop playsinline>
+      <source src="assets/filme2.mp4" type="video/mp4" />
+      Seu navegador não suporta vídeos em HTML5.
+    </video>
+    <button id="soundToggle">🔇</button>
+  </section>
+
+  <section class="carousel-container">
+    <h2>Diversos títulos para a diversão de toda a família</h2>
+    <div class="carousel">
+        <img src="assets/filme1.webp" alt="Filme 1" onclick="changeVideo('assets/filme1.mp4')" />
+        <img src="assets/filme2.webp" alt="Filme 2" onclick="changeVideo('assets/filme2.mp4')" />
+        <img src="assets/filme3.webp" alt="Filme 3" onclick="changeVideo('assets/filme3.mp4')" />
+        <img src="assets/filme4.webp" alt="Filme 4" onclick="changeVideo('assets/filme4.mp4')" />
+        <img src="assets/filme5.webp" alt="Filme 5" onclick="changeVideo('assets/filme5.mp4')" />
+        <img src="assets/filme6.webp" alt="Filme 6" onclick="changeVideo('assets/filme6.mp4')" />
+        <img src="assets/filme7.webp" alt="Filme 7" onclick="changeVideo('assets/filme7.mp4')" />
+    </div>
+    </section>
+
+    <section>
+      <div>
+        <h2>Escolha seu Plano</h2>
+      </div>
+    </section>
+
+  <section class="subscription-options">    
+    <div class="plan">
+      <h3>1 ano</h3>
+      <p class="price">65€</p>
+      <hr />
+      <ul>
+        <li>✔ Servidor VIP</li>
+        <li>✔ HD/FHD/4K IPTV</li>
+        <li>✔ +30.000 canais ao vivo e de esportes</li>
+        <li>✔ +100.000 Filmes e séries</li>
+        <li>✔ Canais PPV (UFC, NBA, NFL...)</li>
+        <li>✔ Atualizações regulares</li>
+        <li>✔ Todos os dispositivos suportados</li>
+        <li>✔ Suporte gratuito</li>
+        <li>✔ Estabilidade do servidor 99%</li>
+      </ul>
+      <a href="https://wa.me/351936693919" class="btn">Peça agora</a>
+      <p class="refund">Satisfeito ou Reembolsado</p>
+    </div>
+
+    <div class="plan">
+      <h3>6 meses</h3>
+      <p class="price">45€</p>
+      <hr />
+      <ul>
+        <li>✔ Servidor VIP</li>
+        <li>✔ HD/FHD/4K IPTV</li>
+        <li>✔ +30.000 canais ao vivo e de esportes</li>
+        <li>✔ +100.000 Filmes e séries</li>
+        <li>✔ Canais PPV (UFC, NBA, NFL...)</li>
+        <li>✔ Atualizações regulares</li>
+        <li>✔ Todos os dispositivos suportados</li>
+        <li>✔ Suporte gratuito</li>
+        <li>✔ Estabilidade do servidor 99%</li>
+      </ul>
+      <a href="https://wa.me/351936693919" class="btn">Peça agora</a>
+      <p class="refund">Satisfeito ou Reembolsado</p>
+    </div>
+
+    <div class="plan">
+      <h3>3 meses</h3>
+      <p class="price">24.99€</p>
+      <hr />
+      <ul>
+        <li>✔ Servidor VIP</li>
+        <li>✔ HD/FHD/4K IPTV</li>
+        <li>✔ +30.000 canais ao vivo e de esportes</li>
+        <li>✔ +100.000 Filmes e séries</li>
+        <li>✔ Canais PPV (UFC, NBA, NFL...)</li>
+        <li>✔ Atualizações regulares</li>
+        <li>✔ Todos os dispositivos suportados</li>
+        <li>✔ Suporte gratuito</li>
+        <li>✔ Estabilidade do servidor 99%</li>
+      </ul>
+      <a href="https://wa.me/351936693919" class="btn">Peça agora</a>
+      <p class="refund">Satisfeito ou Reembolsado</p>
+    </div>
+
+    <div class="plan">
+      <h3>1 mês</h3>
+      <p class="price">10€</p>
+      <hr />
+      <ul>
+        <li>✔ Servidor VIP</li>
+        <li>✔ HD/FHD/4K IPTV</li>
+        <li>✔ +30.000 canais ao vivo e de esportes</li>
+        <li>✔ +100.000 Filmes e séries</li>
+        <li>✔ Canais PPV (UFC, NBA, NFL...)</li>
+        <li>✔ Atualizações regulares</li>
+        <li>✔ Todos os dispositivos suportados</li>
+        <li>✔ Suporte gratuito</li>
+        <li>✔ Estabilidade do servidor 99%</li>
+      </ul>
+      <a href="https://wa.me/351936693919" class="btn">Peça agora</a>
+      <p class="refund">Satisfeito ou Reembolsado</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-section">
+      <img src="assets/logo2.png" alt="Logo da TV Prime" class="footer-logo" />
+      <p>Email: <a href="mailto:support@tvprimeshop.com">support@tvprimeshop.com</a></p>
+      <p>Whatsapp: <a href="https://wa.me/351936693919" target="_blank">+351 936 693 919</a></p>
+    </div>
+  
+    <div class="footer-section">
+      <h3>Terms</h3>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Refund Policy</a></li>
+        <li><a href="https://wa.me/351936693919">Contact us</a></li>
+      </ul>
+      <p class="footer-text">
+        Este é um serviço ideal para quem deseja assistir a seus programas favoritos em qualquer lugar do mundo, por uma taxa mínima, sem perder nenhuma novidade sobre seu time favorito e sem custos adicionais para equipamentos ou instalação.
+      </p>
+    </div>
+  
+    <div class="footer-section">
+      <h3>Pagamentos Seguros</h3>
+      <p>OS PAGAMENTOS SÃO SEGUROS</p>
+      <img src="assets/pagamenttos.webp" alt="Métodos de Pagamento" class="payments" />
+    </div>
+  
+    <div class="footer-bottom">
+      <p>Vip TV © 2024. Todos os direitos reservados</p>
+      <a href="https://wa.me/351936693919" target="_blank" class="whatsapp-button">Obtenha Teste Grátis <img src="assets/whatsicon.png" alt="WhatsApp" /></a>
+    </div>
+  </footer>  
+</body>
+</html>

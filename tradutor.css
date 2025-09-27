@@ -1,0 +1,17 @@
+.language-flags {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .flag {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: transform 0.3s;
+  }
+  
+  .flag:hover {
+    transform: scale(1.2);
+  }
+  
